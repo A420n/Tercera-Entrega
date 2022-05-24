@@ -1,0 +1,448 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+body{
+	background-color:#2a2926;
+    color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+body::-webkit-scrollbar{
+	width:7px;
+	background:black;
+}
+
+body::-webkit-scrollbar-thumb{
+	background:white;
+	border-radius:100px;
+}
+
+header{
+	width: 100%;
+	position: sticky;
+	z-index: 5;
+	top: 0px;
+}
+
+li{
+	display: inline-block;
+	margin-top:20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+nav{
+	text-align: center;
+	background-color:#2a2926;
+}
+
+a{
+	color:#dfb7eb;
+	font-size:20px;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#fff;
+	transition:.5s;
+}
+
+.stay{
+	font-size: 20px;
+}
+
+.foo{
+    width: 100%;
+    text-align: center;
+    grid-area: foo;
+    background-color: #1b1b19;
+}
+
+
+
+/*HOME--HOME--HOME--HOME--HOME*/
+/*HOME--HOME--HOME--HOME--HOME*/
+/*HOME--HOME--HOME--HOME--HOME*/
+/*HOME--HOME--HOME--HOME--HOME*/
+/*HOME--HOME--HOME--HOME--HOME*/
+
+
+
+
+
+
+.home span{
+    font-size: 22px;
+    color: #b1b1b1;
+}
+
+.home .por{
+	display: grid;
+    grid-area: por;
+    background-image: url(mult/sato.png);
+}
+
+.home #fuck{
+	justify-self: center;
+	align-self: center;
+}
+
+.home .pic{
+    display: flex;
+    flex-direction: column;
+    grid-area: pic;
+    text-align: center;
+}
+
+.home .pic strong{
+    font-size: 20px;
+}
+
+.home .inf{
+	display: grid;
+    grid-area: inf;
+	width: 90%;
+	align-items: center;
+}
+
+.home .you{
+	display: grid;
+    grid-area: you;
+	width: 100%;
+	align-items: center;
+}
+
+.home .you iframe{
+	width:100%;
+	height:355px;
+}
+
+.home .spo{
+    grid-area: spo;
+	text-align: center;
+}
+
+.home .spo iframe{
+	width:90%; 
+	height:380px; 
+}
+
+.home .container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr .1fr .1fr; 
+    gap: 30px 0px; 
+    grid-template-areas: 
+        "por por por por"
+        "pic pic inf inf"
+        "you you spo spo"
+        "you you spo spo"
+        "foo foo foo foo"; 
+}
+
+
+
+
+/*MERCHANDISING------MERCHANDISING*/
+/*MERCHANDISING------MERCHANDISING*/
+/*MERCHANDISING------MERCHANDISING*/
+/*MERCHANDISING------MERCHANDISING*/
+/*MERCHANDISING------MERCHANDISING*/
+
+
+
+
+.merch .ulNav {
+	padding-left: 47.5%;
+}
+
+.compreAqui{
+	text-align:center;
+	font-size:30px;
+}
+
+.merch .tablaProductos{
+	width:100%;
+}
+
+.merch img{
+	width:400px;
+}
+
+.merch .name{
+	font-size:20px;
+}
+
+.merch .more{
+	text-align:center;
+	font-size:30px;
+	margin-bottom:50px;
+}
+
+
+/*ARTISTAS--ARTISTAS--ARTISTAS*/
+/*ARTISTAS--ARTISTAS--ARTISTAS*/
+/*ARTISTAS--ARTISTAS--ARTISTAS*/
+/*ARTISTAS--ARTISTAS--ARTISTAS*/
+/*ARTISTAS--ARTISTAS--ARTISTAS*/
+
+
+
+.art .cant img{
+	width:300px;
+}
+
+.art .cant{
+	margin-bottom: 10px;
+}
+
+.art p{
+	font-size:20px;
+}
+
+.art .imgName{
+	display:inline-block;
+	text-align:center;
+}
+
+.art .fa-brands{
+	text-align: center;
+}
+
+.art .arts{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.art .Redes{
+	text-align: center;
+}
+
+.art .Redes a{
+	font-size: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.art .foo{
+	margin-top: 10px;
+}
+
+
+
+/*NOSOTROS--NOSOTROS--NOSOTROS*/
+/*NOSOTROS--NOSOTROS--NOSOTROS*/
+/*NOSOTROS--NOSOTROS--NOSOTROS*/
+/*NOSOTROS--NOSOTROS--NOSOTROS*/
+/*NOSOTROS--NOSOTROS--NOSOTROS*/
+
+
+
+.contacto{
+	height: 100vh;
+}
+
+.contacto .pic img{
+	width:400px;
+}
+
+.contacto .fa-brands,.fa-solid{
+	font-size:50px;
+	margin-left:30px;
+	margin-top: 10px;
+}
+
+.contacto .pic{
+	grid-area: pic;
+	text-align: center;
+	margin-left: 30px;
+}
+
+.contacto .pic strong{
+	display: block;
+}
+
+.contacto .inf{
+	grid-area: inf;
+	display: grid;
+	align-self: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.contacto .red{
+	width:100%;
+	grid-area: red;
+	text-align:center;
+	margin-bottom: 11.5px;
+	margin-top: 10px;
+}
+
+.contacto .container{
+	display: grid;
+	gap: 0px 0px;
+	grid-template-areas: 
+		"pic inf"
+		"red red"
+		"foo foo"; /*con el footer tengo un problemita que no me deja ponerlo bien en el bottom, o se queda mas arriba o se va mas abajo, ayuda 👉👈*/
+}
+
+
+
+/* MEDIA MEDIA MEDIA */
+/* MEDIA MEDIA MEDIA */
+/* MEDIA MEDIA MEDIA */
+/* MEDIA MEDIA MEDIA */
+
+
+			/*MOBILE MOBILE MOBILE*/
+			/*MOBILE MOBILE MOBILE*/
+
+@media screen and (min-width:0) and (max-width:650px) {
+	.home .container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.home .you iframe{
+		height: 220px;
+	}
+
+	.home .inf{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.home .inf p{
+		text-align: center;
+	}
+
+	/* MERCH MERCH MERCH*/
+	/* MERCH MERCH MERCH*/
+	/* MERCH MERCH MERCH*/
+	/* MERCH MERCH MERCH*/
+
+	.merch img{
+		width: 150px;
+	}
+
+	.merch .tablaProductos p{
+		font-size: 10px;
+	}
+
+	.merch .compreAqui{
+		font-size: 15px;
+	}
+
+	.merch .more{
+		font-size: 20px;
+	}
+
+
+	/* NOSOTROS NOSOTROS NOSOTROS */
+	/* NOSOTROS NOSOTROS NOSOTROS */
+	/* NOSOTROS NOSOTROS NOSOTROS */
+	
+	.contacto {
+		overflow: auto;
+	}
+
+	.contacto .container{
+		grid-template-areas: 
+			"pic pic"
+			"inf inf"
+			"red red"
+			"foo foo";
+	}
+
+	.contacto .pic{
+		margin: 0%;
+	}
+	
+	.contacto .pic img{
+		width: 300px;
+	}
+
+	.contacto .inf{
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.contacto .fa-brands, .fa-solid{
+		font-size: 30px;
+	}
+}
+
+			/* TABLET TABLET TABLET */
+			/* TABLET TABLET TABLET */
+			/* TABLET TABLET TABLET */
+			/* TABLET TABLET TABLET */
+
+@media screen and (min-width:650px) and (max-width:800px){
+	.home .container{
+		gap: 0px 0px;
+		grid-template-rows: 1fr 1fr 1fr .1fr .1fr; 
+		grid-template-areas:
+			"por por por por"
+			"pic pic pic pic"
+			"inf inf inf inf"
+			"you you spo spo"
+			"foo foo foo foo";
+	}
+
+	.home .pic{
+		margin-top: 10px;
+	}
+
+	.home .inf{
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 80%;
+		text-align: center;
+	}
+
+	.home .you iframe{
+		height: 199px;
+	}
+
+	.home .foo{
+		margin-top: 10px;
+	}
+
+/* MERCH MERCH MERCH*/
+/* MERCH MERCH MERCH*/
+
+	.merch img{
+		width: 200px;
+	}
+
+	.merch .compreAqui{
+		font-size: 20px;
+	}
+
+	.merch .more{
+		font-size: 20px;
+	}
+
+	.merch .tablaProductos p{
+		font-size: 13px;
+	}
+
+
+/* NOSOTROS NOSOTROS NOSOTROS */
+/* NOSOTROS NOSOTROS NOSOTROS */
+
+	.contacto {
+		overflow: auto;
+	}
+
+	.contacto .inf{
+		top: center;
+	}
+}
